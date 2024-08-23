@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    
+    background-color: rgb(4, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 19px;
+    box-shadow: 0px 0px 5px 0px white;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+    
+}
+
+.head {
+    color: white;
+    padding-left: 30px;
+    
+    font-family:Verdana, Poppins, sans-serif;
+}
+.log{
+    color: #abc7f0;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-right: 40px;
+    
+}
+.log:hover{
+    /* border-bottom: 1px solid blue; */
+    color: #5891ff;
+    text-decoration: underline;
+}
+.nav{
+    position: relative;
+    left: 640px;
+}
+.fa-magnifying-glass{
+    color: #fff;
+    position: relative;
+    left: 300px;
+    top: 12px;
+}
+.form {
+    --width-of-input: 200px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+}
+
+
+
+.input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 113%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+}
+
+/* styling of animated border */
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+/* Hover on Input */
+input:hover {
+    background: var(--input-hovered-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* here is code of animated border */
+input:focus~.input-border {
+    width: 114%;
+}
+
+
+.sidebar{
+    background-color: rgb(21, 21, 4);
+    width: 90px;
+    height: 100vh;
+    position: fixed;
+    
+}
+
+.menu{
+   padding-left: 10px;
+   padding-top: 150px;
+
+
+}
+
+.Home1{
+color: #918585;
+cursor: pointer;
+align-content: center;
+width: 70px;
+position: relative;
+
+
+}
+.fa-house,.fa-video,.fa-bars,.fa-tv{
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+}
+.iii{
+    padding-left: 10px;
+}
+.Home1:hover{
+    color: #dfdada;
+}
+.Home1:focus{
+    color: #dfdada;
+}
+
+.box1{
+    position: relative;
+    top: 40px;
+
+}
+.ii{
+    position: relative;
+    left: 5px;
+}
+.box3{
+    position: relative;
+    top: 60px;
+
+}
+.box4{
+    position: relative;
+    top: 90px;
+
+}
+
+
+
+/* body */
+
+
+body{
+    background-color: black;
+}
+section{
+    min-height: 300vh;
+}
+
+
+
+.body1{
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 5s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.live2{
+    padding-left: 130px;
+    padding-top: 100px;
+    color: white;
+    font-size: 30px;
+}
+.inin{
+    padding-right: 30px;
+    font-size: 20px;
+}
+.onown{
+    margin-left: 40px;
+}
+.inin:hover{
+
+    text-decoration: underline;
+    color: aquamarine;
+    cursor: pointer;
+}
+.livetvw{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.im1 img{
+    width: 205px;
+    height: 300px;
+    
+}
+img{
+    cursor: pointer;
+}
+
+.im1{
+    margin-left: 90px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.im img{
+    width: 205px;
+    height: 300px;
+}
+.im{
+   margin-left: 120px;
+   margin-top: 20px;
+}
+
+footer{
+    background-color: rgb(20, 28, 35);
+   padding: 30px;
+   
+}
+
+footer a{
+    color: #957777;
+    font-size: 20px;
+    padding-left: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #709ee2;
+    text-decoration: underline;
+}
+.icon88{
+    display: flex;
+    justify-content: end;
+}
+
+.fa-play{
+    font-size: 40px;
+    color: blue;
+    
+}
+.fa-android{
+    color: #dfdada;
+    font-size: 50px;
+}
+
+
+.appstore-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    border: 3px solid rgb(189, 189, 189);
+    background-color: rgb(15, 15, 15);
+    border-radius: 15px;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 100px -30px rgb(255, 255, 255);
+  }
+  .appstore-button svg {
+    width: 45px;
+  }
+  .appstore-button svg path {
+    fill: white;
+    transition: all 0.3s;
+  }
+  .button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s;
+  }
+  .top-text {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .bottom-text {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .appstore-button:hover {
+    background-color: rgb(236, 236, 236);
+    border: 3px solid rgb(138, 138, 138);
+  }
+  .appstore-button:hover .button-text {
+    color: black;
+  }
+  .appstore-button:hover svg path {
+    fill: black;
+  }
+  
